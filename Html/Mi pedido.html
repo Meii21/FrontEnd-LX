@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>Mi pedido</title>
+</head>
+<body>
+    <img src="./CakeSpace.png" alt="CakeSpace" width="150px">
+    <h1>¡Hora de realizar tu pedido!</h1>
+
+    <form action="Pedido.js">
+        <label for="Nombre">Pedido especial de </label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+        <br><br>
+
+        <label for="Número">Número de contacto</label><br>
+        <input type="number" id="Número" name="Número" placeholder="55xxxxxxxx">
+
+        <br><br>
+
+        <label for="Email">Correo de contacto</label><br>
+        <input type="Email" id="Email" name="Email" placeholder="correo@correo.com">
+
+        <br><br>
+
+        <p>Tamaño del pastel</p>
+        <select name="¿Para cuantas personas es?" id="Botella o Café">
+            <option value="Individual">Individual</option>
+            <option value="8 a 10 personas">8 a 10 personas</option>
+            <option value="15 a 20 personas">15 a 20 personas</option>
+            <option value="30 a 35 personas">30 a 35 personas</option>
+            <option value="45 a 50 personas">45 a 50 personas</option>
+            <option value="90 a 100 personas">90 a 100 personas</option>
+        </select>
+
+        <br><br>
+
+        <p>Forma del pastel</p>
+        <input type="radio" id="Cuadrado" name="Redondo, Cuadrado, Corazón, Otro" value="Cuadrado">
+        <label for="Cuadrado">Cuadrado</label><br>
+        <input type="radio" id="Corazón" name="Redondo, Cuadrado, Corazón, Otro" value="Corazón">
+        <label for="Corazón">Corazón</label><br>
+        <input type="radio" id="Redondo" name="Redondo, Cuadrado, Corazón, Otro" value="Redondo">
+        <label for="Redondo">Redondo</label><br>
+        <input type="radio" id="Otro" name="Redondo, Cuadrado, Corazón, Otro" value="Otro">
+        <label for="Otro">Otro</label><br><input type="text" id="Especificar" name="Especificar" placeholder="Sujeto a aprobación">
+
+        <br><br>
+
+        <p>Sabor del bizcocho</p>
+        <input type="radio" id="Chocolate" name="Chocolate, Vainilla, Fresa, Limón" value="Chocolate">
+        <label for="Chocolate">Chocolate</label><br>
+        <input type="radio" id="Fresa" name="Chocolate, Vainilla, Fresa, Limón" value="Fresa">
+        <label for="Fresa">Fresa</label><br>
+        <input type="radio" id="Limón" name="Chocolate, Vainilla, Fresa, Limón" value="Limón">
+        <label for="Limón">Limón</label><br>
+        <input type="radio" id="Vainilla" name="Chocolate, Vainilla, Fresa, Limón" value="Vainilla">
+        <label for="Vainilla">Vainilla</label><br>
+
+        <br><br>
+
+        <p>Relleno</p>
+        <input type="radio" id="Cajeta" name="Cajeta, Chantilly, Chocolate, Frutos, Mermelada" value="Cajeta">
+        <label for="Cajeta">Cajeta</label><br>
+        <input type="radio" id="Chantilly" name="Cajeta, Chantilly, Chocolate, Frutos, Mermelada" value="Chantilly">
+        <label for="Chantilly">Chantilly</label><br>
+        <input type="radio" id="Chocolate" name="Cajeta, Chantilly, Chocolate, Frutos, Mermelada" value="Chocolate">
+        <label for="Chocolate">Chocolate</label><br>
+        <input type="radio" id="Frutos" name="Cajeta, Chantilly, Chocolate, Frutos, Mermelada" value="Frutos">
+        <label for="Frutos">Frutos</label><br>
+        <input type="radio" id="Mermelada" name="Cajeta, Chantilly, Chocolate, Frutos, Mermelada" value="Mermelada">
+        <label for="Mermelada">Mermelada</label><br>
+
+        <br><br>
+
+        <p>Cubierta</p>
+        <input type="radio" id="Buttercream" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Buttercream">
+        <label for="Buttercream">Buttercream</label><br>
+        <input type="radio" id="Caramelo" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Caramelo">
+        <label for="Caramelo">Caramelo</label><br>
+        <input type="radio" id="Chantilly" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Chantilly">
+        <label for="Chantilly">Chantilly</label><br>
+        <input type="radio" id="Chocolate" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Chocolate">
+        <label for="Chocolate">Chocolate</label><br>
+        <input type="radio" id="Fondant" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Fondant">
+        <label for="Fondant">Fondant</label><br>
+        <input type="radio" id="Frutos" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Frutas">
+        <label for="Frutas">Frutas</label><br>
+        <input type="radio" id="Merengue" name="Caramelo, Chantilly, Chocolate, Frutas, Merengue, Fondant, Buttercream" value="Merengue">
+        <label for="Merengue">Merengue</label><br>
+
+        <br><br>
+
+        <p>Adornos</p>
+        <input type="checkbox" id="adorno1" name="adorno1" value="Flores de betún">
+        <label for="adorno1">Flores de betún</label><br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="Diamantina comestible">
+        <label for="adorno2">Diamantina comestible</label><br>
+        <input type="checkbox" id="adorno3" name="adorno3" value="Trozos de chocolate">
+        <label for="adorno3">Trozos de chocolate</label><br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="Figura">
+        <label for="adorno4">Figura</label><br><input type="text" id="Especificar" name="Especificar" placeholder="Especificar"><br>
+        <input type="checkbox" id="adorno5" name="adorno5" value="Felicitación">
+        <label for="adorno5">Felicitación</label><br><input type="text" id="Especificar" name="Especificar" placeholder="Especificar">
+
+        <br><br><br>
+
+        <p>Bebida especial</p>
+        <select name="Botella o Café" id="Botella o Café">
+            <option value="Vino Blanco 750 ML">Vino Blanco 750 ML</option>
+            <option value="Vino Seco 750 ML">Vino Seco 750 ML</option>
+            <option value="Bolsa Ristretto 500 GR">Bolsa Ristretto 500 GR</option>
+            <option value="Bolsa Soconusco 500 GR">Bolsa Soconusco 500 GR</option>
+            <option value="Bolsa Cappuccino y coulant 500 GR">Bolsa Cappuccino y coulant 500 GR</option>
+            <option value="Bolsa Café irlandés 500 GR">Bolsa Café irlandés 500 GR</option>
+        </select>
+
+        <br><br><br><br>
+
+        <input type="reset">
+        <input type="submit">
+
+        <br><br><br>
+
+    </form>
+    
+</body>
+<footer>
+    <h4>Encuentra nuestra tienda física en Puebla 213, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX</h4>
+    <h4>Para una cotización especial llámanos al 5566221148 de lunes a viernes de 11:00 a 14:00 horas</h4>
+    <h3>CakeSpace, ¡creando dulces momentos!</h3><br><br>
+
+</footer>
